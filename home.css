@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    border-radius: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 10px;
+}
+
+.nav-list a {
+    text-decoration: italian;
+    color: white;
+    font-weight: Italian;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffcc00;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 2.5px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 89%;
+        background-color: #333;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #555;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+#hero {
+    background-size: cover;
+    color: #2b33566d;
+    text-align: center;
+    padding: 150px 0;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#about{
+    background-size: cover;
+    color: #2b33566d;
+    text-align: center;
+    padding: 150px 0;
+}
+
+#about h2{
+    font-size: 1.2em;
+    font-weight: Bold;
+}
+
+#about p{
+    font-size: 1em;
+}
+
+#skills{
+    text-align: center;
+}
+/* Common styles for all screen sizes */
+.skills-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 80%; /* Default to full width */
+}
+
+.skills-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card h3 {
+    color: #333;
+}
+
+.skills-card p {
+    color: #666;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  
+
+
+     .skills-cards-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+  } 
+     .skills-card { 
+        width: 33%;
+        margin: 0 1%;
+}   
+}
+
+@media screen and (min-width: 1025px) {
+    .skills-cards-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills-card {
+        width: 30%; 
+    }
+}
+
+section {
+    padding: 4em 2em;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+}*
+
+#projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#testimonialsContainer div, #projectsContainer div {
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.discord-icon{
+  position: fixed; 
+  bottom: 15%;
+  right: 20px;   
+  width: 70px; 
+  height: 70px;   
+  cursor: pointer; 
+  border-radius: 25px;
+    }
+}
+
+.footer {
+  background-color: #f0f0f0; /* Customize background color */
+  padding: 2rem;
+  text-align: center; /* Center content by default */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+@media (max-width: 1025px) {
+  /* Media query for mobile devices */
+  .container {
+    flex-direction: column;
+    text-align: center; 
+  }
+
+}
